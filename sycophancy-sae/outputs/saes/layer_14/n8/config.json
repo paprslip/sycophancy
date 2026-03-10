@@ -1,0 +1,10 @@
+{
+  "layer": 14,
+  "n_features": 8,
+  "k": 2,
+  "d_model": 5120,
+  "constraint_type": "hierarchical",
+  "var_explained": 0.25082165002822876,
+  "final_loss": 0.7531108736991883,
+  "n_dead_features": 0
+}

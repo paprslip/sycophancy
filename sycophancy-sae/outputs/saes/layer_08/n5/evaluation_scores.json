@@ -1,0 +1,15 @@
+{
+  "layer": 8,
+  "n_features": 5,
+  "consistency": 0.16177777777777777,
+  "completeness": 0.1622222222222222,
+  "independence": 0.0,
+  "composite": 0.10799999999999998,
+  "feature_activation_freq": [
+    0.0,
+    0.13644444444444445,
+    0.0,
+    0.0,
+    0.029333333333333333
+  ]
+}

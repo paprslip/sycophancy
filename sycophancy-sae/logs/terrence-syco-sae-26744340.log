@@ -1,0 +1,2940 @@
+══════════════════════════════════════════════════════
+  Sycophancy SAE Pipeline
+  Job:     26744340 on fc10518
+  Started: Mon Mar  9 19:52:40 PDT 2026
+  Steps:   3,4,5
+══════════════════════════════════════════════════════
+created virtual environment CPython3.11.5.final.0-64 in 11447ms
+  creator CPython3Posix(dest=/localscratch/terrence.26744340.0/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/terrence/.local/share/virtualenv)
+    added seed packages: pip==25.2+computecanada, setuptools==80.9.0+computecanada, wheel==0.45.1+computecanada
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in /localscratch/terrence.26744340.0/env/lib/python3.11/site-packages (25.2+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pip-26.0.1+computecanada-py3-none-any.whl
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.2+computecanada
+    Uninstalling pip-25.2+computecanada:
+      Successfully uninstalled pip-25.2+computecanada
+Successfully installed pip-25.2+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.10.0+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers-5.3.0+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/accelerate-1.13.0+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 3))
+Collecting datasets>=2.18.0 (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+  Using cached datasets-4.7.0-py3-none-any.whl.metadata (19 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.4.2+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 5))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scipy-1.17.0+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 6))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scikit_learn-1.8.0+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 7))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/matplotlib-3.10.8+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/seaborn-0.13.2+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 9))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pandas-3.0.0+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 10))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyyaml-6.0.3+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 11))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tqdm-4.67.3+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 12))
+Collecting anthropic>=0.25.0 (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+  Using cached anthropic-0.84.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting openai>=1.30.0 (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 14))
+  Using cached openai-2.26.0-py3-none-any.whl.metadata (29 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/einops-0.8.2+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 15))
+Collecting jupyterlab>=4.1.0 (from -r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+  Using cached jupyterlab-4.5.5-py3-none-any.whl.metadata (16 kB)
+Collecting filelock (from torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+  Using cached filelock-3.25.1-py3-none-any.whl.metadata (2.0 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.15.0+computecanada-py3-none-any.whl (from torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.14.0+computecanada-py3-none-any.whl (from torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.6.1+computecanada-py3-none-any.whl (from torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.6+computecanada-py3-none-any.whl (from torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2026.2.0+computecanada-py3-none-any.whl (from torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Collecting huggingface-hub<2.0,>=1.3.0 (from transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+  Using cached huggingface_hub-1.6.0-py3-none-any.whl.metadata (13 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/packaging-26.0+computecanada-py3-none-any.whl (from transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/regex-2026.1.15+computecanada-cp311-cp311-linux_x86_64.whl (from transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/tokenizers-0.22.2+computecanada-cp39-abi3-linux_x86_64.whl (from transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typer-0.24.1+computecanada-py3-none-any.whl (from transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/safetensors-0.7.0+computecanada-cp38-abi3-linux_x86_64.whl (from transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/hf_xet-1.3.2+computecanada-cp37-abi3-linux_x86_64.whl (from huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/httpx-0.28.1+computecanada-py3-none-any.whl (from huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/anyio-4.12.1+computecanada-py3-none-any.whl (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Collecting certifi (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+  Using cached certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/httpcore-1.0.9+computecanada-py3-none-any.whl (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/idna-3.11+computecanada-py3-none-any.whl (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/h11-0.16.0+computecanada-py3-none-any.whl (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.3.0->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/psutil-7.2.2+computecanada-cp36-abi3-linux_x86_64.whl (from accelerate>=0.27.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 3))
+Requirement already satisfied: pyarrow>=21.0.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/arrow/23.0.1/lib/python3.11/site-packages (from datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4)) (23.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/dill-0.4.0+computecanada-py3-none-any.whl (from datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests-2.32.5+computecanada-py3-none-any.whl (from datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/xxhash-3.5.0+computecanada-cp311-cp311-linux_x86_64.whl (from datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/multiprocess-0.70.18+computecanada-py3-none-any.whl (from datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/aiohttp-3.13.3+computecanada-cp311-cp311-linux_x86_64.whl (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/joblib-1.5.3+computecanada-py3-none-any.whl (from scikit-learn>=1.4.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 7))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/threadpoolctl-3.6.0+computecanada-py3-none-any.whl (from scikit-learn>=1.4.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 7))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/contourpy-1.3.3+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cycler-0.12.1+computecanada-py3-none-any.whl (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Collecting fonttools>=4.22.0 (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+  Using cached fonttools-4.62.0-py3-none-any.whl.metadata (117 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/kiwisolver-1.4.9+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pillow-12.1.0+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyparsing-3.3.2+computecanada-py3-none-any.whl (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.9.0.post0+computecanada-py2.py3-none-any.whl (from matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/distro-1.9.0+computecanada-py3-none-any.whl (from anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/docstring_parser-0.17.0+computecanada-py3-none-any.whl (from anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/jiter-0.11.1+computecanada-cp311-cp311-linux_x86_64.whl (from anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pydantic-2.12.5+computecanada-py3-none-any.whl (from anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sniffio-1.3.1+computecanada-py3-none-any.whl (from anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/annotated_types-0.7.0+computecanada-py3-none-any.whl (from pydantic<3,>=1.9.0->anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pydantic_core-2.41.5+computecanada-cp311-cp311-linux_x86_64.whl (from pydantic<3,>=1.9.0->anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_inspection-0.4.2+computecanada-py3-none-any.whl (from pydantic<3,>=1.9.0->anthropic>=0.25.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 13))
+Collecting async-lru>=1.0.0 (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+  Using cached async_lru-2.2.0-py3-none-any.whl.metadata (7.2 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/ipykernel-7.2.0+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyter_core-5.9.1+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyter_lsp-2.3.0+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyter_server-2.17.0+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyterlab_server-2.28.0+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/notebook_shim-0.2.4+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Requirement already satisfied: setuptools>=41.1.0 in /localscratch/terrence.26744340.0/env/lib/python3.11/site-packages (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17)) (80.9.0+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tornado-6.5.4+computecanada-cp39-abi3-linux_x86_64.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/traitlets-5.14.3+computecanada-py3-none-any.whl (from jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/argon2_cffi-25.1.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyter_client-8.8.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyter_events-0.12.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyter_server_terminals-0.5.4+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/nbconvert-7.17.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/nbformat-5.10.4+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/overrides-7.7.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/prometheus_client-0.24.1+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pyzmq-27.1.0+computecanada-cp311-cp311-linux_x86_64.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/send2trash-2.1.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/terminado-0.18.1+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/websocket_client-1.9.0+computecanada-py3-none-any.whl (from jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Collecting babel>=2.10 (from jupyterlab-server<3,>=2.28.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+  Using cached babel-2.18.0-py3-none-any.whl.metadata (2.2 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/json5-0.13.0+computecanada-py3-none-any.whl (from jupyterlab-server<3,>=2.28.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jsonschema-4.26.0+computecanada-py3-none-any.whl (from jupyterlab-server<3,>=2.28.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiohappyeyeballs-2.6.1+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiosignal-1.4.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/attrs-25.4.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/frozenlist-1.8.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/multidict-6.7.1+computecanada-cp311-cp311-linux_x86_64.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/propcache-0.4.1+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/yarl-1.23.0+computecanada-cp311-cp311-linux_x86_64.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/argon2_cffi_bindings-25.1.0+computecanada-cp39-abi3-linux_x86_64.whl (from argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/comm-0.2.3+computecanada-py3-none-any.whl (from ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/debugpy-1.8.20+computecanada-cp311-cp311-linux_x86_64.whl (from ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/ipython-9.10.0+computecanada-py3-none-any.whl (from ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/matplotlib_inline-0.2.1+computecanada-py3-none-any.whl (from ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/nest_asyncio-1.6.0+computecanada-py3-none-any.whl (from ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/decorator-5.2.1+computecanada-py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/ipython_pygments_lexers-1.1.1+computecanada-py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jedi-0.19.2+computecanada-py2.py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pexpect-4.9.0+computecanada-py2.py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/prompt_toolkit-3.0.52+computecanada-py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pygments-2.19.2+computecanada-py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/stack_data-0.6.3+computecanada-py3-none-any.whl (from ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/wcwidth-0.6.0+computecanada-py3-none-any.whl (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/parso-0.8.6+computecanada-py2.py3-none-any.whl (from jedi>=0.18.1->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/markupsafe-3.0.3+computecanada-cp311-cp311-linux_x86_64.whl (from jinja2->torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jsonschema_specifications-2025.9.1+computecanada-py3-none-any.whl (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/referencing-0.37.0+computecanada-py3-none-any.whl (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/rpds_py-0.30.0+computecanada-cp311-cp311-linux_x86_64.whl (from jsonschema>=4.18.0->jupyterlab-server<3,>=2.28.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Collecting platformdirs>=2.5 (from jupyter-core->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+  Using cached platformdirs-4.9.4-py3-none-any.whl.metadata (4.7 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_json_logger-4.0.0+computecanada-py3-none-any.whl (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rfc3339_validator-0.1.4+computecanada-py2.py3-none-any.whl (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rfc3986_validator-0.1.1+computecanada-py2.py3-none-any.whl (from jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fqdn-1.5.1+computecanada-py3-none-any.whl (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/isoduration-20.11.0+computecanada-py3-none-any.whl (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jsonpointer-3.0.0+computecanada-py2.py3-none-any.whl (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rfc3987_syntax-1.1.0+computecanada-py3-none-any.whl (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/uri_template-1.3.0+computecanada-py3-none-any.whl (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/webcolors-25.10.0+computecanada-py3-none-any.whl (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/beautifulsoup4-4.14.3+computecanada-py3-none-any.whl (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/bleach-6.3.0+computecanada-py3-none-any.whl (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/defusedxml-0.7.1+computecanada-py2.py3-none-any.whl (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jupyterlab_pygments-0.3.0+computecanada-py3-none-any.whl (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mistune-3.2.0+computecanada-py3-none-any.whl (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/nbclient-0.10.4+computecanada-py3-none-any.whl (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pandocfilters-1.5.1+computecanada-py2.py3-none-any.whl (from nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/webencodings-0.5.1+computecanada-py2.py3-none-any.whl (from bleach!=5.0.0->bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tinycss2-1.4.0+computecanada-py3-none-any.whl (from bleach[css]!=5.0.0->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fastjsonschema-2.21.2+computecanada-py3-none-any.whl (from nbformat>=5.3.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/ptyprocess-0.7.0+computecanada-py2.py3-none-any.whl (from pexpect>4.3->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.17.0+computecanada-py2.py3-none-any.whl (from python-dateutil>=2.7->matplotlib>=3.8.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 8))
+Collecting charset-normalizer<4,>=2 (from requests>=2.32.2->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+  Using cached charset_normalizer-3.4.5-py3-none-any.whl.metadata (39 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-2.6.3+computecanada-py3-none-any.whl (from requests>=2.32.2->datasets>=2.18.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/lark-1.3.1+computecanada-py3-none-any.whl (from rfc3987-syntax>=1.1.0->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/executing-2.2.1+computecanada-py2.py3-none-any.whl (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/asttokens-3.0.1+computecanada-py3-none-any.whl (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pure_eval-0.2.3+computecanada-py3-none-any.whl (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel!=6.30.0,>=6.5.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy>=1.13.3->torch>=2.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/cffi-2.0.0+computecanada-cp311-cp311-linux_x86_64.whl (from argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pycparser-3.0+computecanada-py3-none-any.whl (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi>=21.1->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/soupsieve-2.8.3+computecanada-py3-none-any.whl (from beautifulsoup4->nbconvert>=6.4.4->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/arrow-1.4.0+computecanada-py3-none-any.whl (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tzdata-2025.3+computecanada-py2.py3-none-any.whl (from arrow>=0.15.0->isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.11.0->jupyter-server<3,>=2.4.0->jupyterlab>=4.1.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 17))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/click-8.3.1+computecanada-py3-none-any.whl (from typer->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/shellingham-1.5.4+computecanada-py2.py3-none-any.whl (from typer->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rich-14.3.3+computecanada-py3-none-any.whl (from typer->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/annotated_doc-0.0.4+computecanada-py3-none-any.whl (from typer->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/markdown_it_py-4.0.0+computecanada-py3-none-any.whl (from rich>=12.3.0->typer->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mdurl-0.1.2+computecanada-py3-none-any.whl (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->transformers>=4.40.0->-r /home/terrence/sycophancy/sycophancy-sae/requirements.txt (line 2))
+Using cached huggingface_hub-1.6.0-py3-none-any.whl (612 kB)
+Using cached datasets-4.7.0-py3-none-any.whl (527 kB)
+Using cached anthropic-0.84.0-py3-none-any.whl (455 kB)
+Using cached openai-2.26.0-py3-none-any.whl (1.1 MB)
+Using cached jupyterlab-4.5.5-py3-none-any.whl (12.4 MB)
+Using cached async_lru-2.2.0-py3-none-any.whl (7.9 kB)
+Using cached babel-2.18.0-py3-none-any.whl (10.2 MB)
+Using cached filelock-3.25.1-py3-none-any.whl (26 kB)
+Using cached fonttools-4.62.0-py3-none-any.whl (1.2 MB)
+Using cached platformdirs-4.9.4-py3-none-any.whl (21 kB)
+Using cached charset_normalizer-3.4.5-py3-none-any.whl (55 kB)
+Using cached certifi-2026.2.25-py3-none-any.whl (153 kB)
+Installing collected packages: webencodings, pure-eval, ptyprocess, mpmath, fastjsonschema, xxhash, websocket-client, webcolors, wcwidth, urllib3, uri-template, tzdata, typing-extensions, traitlets, tqdm, tornado, tinycss2, threadpoolctl, sympy, soupsieve, sniffio, six, shellingham, send2trash, safetensors, rpds-py, rfc3986-validator, regex, pyzmq, pyyaml, python-json-logger, pyparsing, pygments, pycparser, psutil, propcache, prometheus-client, platformdirs, pillow, pexpect, parso, pandocfilters, packaging, overrides, numpy, networkx, nest-asyncio, multidict, mistune, mdurl, MarkupSafe, lark, kiwisolver, jupyterlab-pygments, jsonpointer, json5, joblib, jiter, idna, hf-xet, h11, fsspec, frozenlist, fqdn, fonttools, filelock, executing, einops, docstring-parser, distro, dill, defusedxml, decorator, debugpy, cycler, comm, click, charset-normalizer, certifi, bleach, babel, attrs, async-lru, asttokens, annotated-types, annotated-doc, aiohappyeyeballs, yarl, typing-inspection, terminado, stack_data, scipy, rfc3987-syntax, rfc3339-validator, requests, referencing, python-dateutil, pydantic-core, prompt_toolkit, multiprocess, matplotlib-inline, markdown-it-py, jupyter-core, jinja2, jedi, ipython-pygments-lexers, httpcore, contourpy, cffi, beautifulsoup4, anyio, aiosignal, torch, scikit-learn, rich, pydantic, pandas, matplotlib, jupyter-server-terminals, jupyter-client, jsonschema-specifications, ipython, httpx, arrow, argon2-cffi-bindings, aiohttp, typer, seaborn, openai, jsonschema, isoduration, ipykernel, argon2-cffi, anthropic, nbformat, huggingface-hub, tokenizers, nbclient, jupyter-events, datasets, accelerate, transformers, nbconvert, jupyter-server, notebook-shim, jupyterlab-server, jupyter-lsp, jupyterlab
+
+Successfully installed MarkupSafe-3.0.3+computecanada accelerate-1.13.0+computecanada aiohappyeyeballs-2.6.1+computecanada aiohttp-3.13.3+computecanada aiosignal-1.4.0+computecanada annotated-doc-0.0.4+computecanada annotated-types-0.7.0+computecanada anthropic-0.84.0 anyio-4.12.1+computecanada argon2-cffi-25.1.0+computecanada argon2-cffi-bindings-25.1.0+computecanada arrow-1.4.0+computecanada asttokens-3.0.1+computecanada async-lru-2.2.0 attrs-25.4.0+computecanada babel-2.18.0 beautifulsoup4-4.14.3+computecanada bleach-6.3.0+computecanada certifi-2026.2.25 cffi-2.0.0+computecanada charset-normalizer-3.4.5 click-8.3.1+computecanada comm-0.2.3+computecanada contourpy-1.3.3+computecanada cycler-0.12.1+computecanada datasets-4.7.0 debugpy-1.8.20+computecanada decorator-5.2.1+computecanada defusedxml-0.7.1+computecanada dill-0.4.0+computecanada distro-1.9.0+computecanada docstring-parser-0.17.0+computecanada einops-0.8.2+computecanada executing-2.2.1+computecanada fastjsonschema-2.21.2+computecanada filelock-3.25.1 fonttools-4.62.0 fqdn-1.5.1+computecanada frozenlist-1.8.0+computecanada fsspec-2026.2.0+computecanada h11-0.16.0+computecanada hf-xet-1.3.2+computecanada httpcore-1.0.9+computecanada httpx-0.28.1+computecanada huggingface-hub-1.6.0 idna-3.11+computecanada ipykernel-7.2.0+computecanada ipython-9.10.0+computecanada ipython-pygments-lexers-1.1.1+computecanada isoduration-20.11.0+computecanada jedi-0.19.2+computecanada jinja2-3.1.6+computecanada jiter-0.11.1+computecanada joblib-1.5.3+computecanada json5-0.13.0+computecanada jsonpointer-3.0.0+computecanada jsonschema-4.26.0+computecanada jsonschema-specifications-2025.9.1+computecanada jupyter-client-8.8.0+computecanada jupyter-core-5.9.1+computecanada jupyter-events-0.12.0+computecanada jupyter-lsp-2.3.0+computecanada jupyter-server-2.17.0+computecanada jupyter-server-terminals-0.5.4+computecanada jupyterlab-4.5.5 jupyterlab-pygments-0.3.0+computecanada jupyterlab-server-2.28.0+computecanada kiwisolver-1.4.9+computecanada lark-1.3.1+computecanada markdown-it-py-4.0.0+computecanada matplotlib-3.10.8+computecanada matplotlib-inline-0.2.1+computecanada mdurl-0.1.2+computecanada mistune-3.2.0+computecanada mpmath-1.3.0+computecanada multidict-6.7.1+computecanada multiprocess-0.70.18+computecanada nbclient-0.10.4+computecanada nbconvert-7.17.0+computecanada nbformat-5.10.4+computecanada nest-asyncio-1.6.0+computecanada networkx-3.6.1+computecanada notebook-shim-0.2.4+computecanada numpy-2.4.2+computecanada openai-2.26.0 overrides-7.7.0+computecanada packaging-26.0+computecanada pandas-3.0.0+computecanada pandocfilters-1.5.1+computecanada parso-0.8.6+computecanada pexpect-4.9.0+computecanada pillow-12.1.0+computecanada platformdirs-4.9.4 prometheus-client-0.24.1+computecanada prompt_toolkit-3.0.52+computecanada propcache-0.4.1+computecanada psutil-7.2.2+computecanada ptyprocess-0.7.0+computecanada pure-eval-0.2.3+computecanada pycparser-3.0+computecanada pydantic-2.12.5+computecanada pydantic-core-2.41.5+computecanada pygments-2.19.2+computecanada pyparsing-3.3.2+computecanada python-dateutil-2.9.0.post0+computecanada python-json-logger-4.0.0+computecanada pyyaml-6.0.3+computecanada pyzmq-27.1.0+computecanada referencing-0.37.0+computecanada regex-2026.1.15+computecanada requests-2.32.5+computecanada rfc3339-validator-0.1.4+computecanada rfc3986-validator-0.1.1+computecanada rfc3987-syntax-1.1.0+computecanada rich-14.3.3+computecanada rpds-py-0.30.0+computecanada safetensors-0.7.0+computecanada scikit-learn-1.8.0+computecanada scipy-1.17.0+computecanada seaborn-0.13.2+computecanada send2trash-2.1.0+computecanada shellingham-1.5.4+computecanada six-1.17.0+computecanada sniffio-1.3.1+computecanada soupsieve-2.8.3+computecanada stack_data-0.6.3+computecanada sympy-1.14.0+computecanada terminado-0.18.1+computecanada threadpoolctl-3.6.0+computecanada tinycss2-1.4.0+computecanada tokenizers-0.22.2+computecanada torch-2.10.0+computecanada tornado-6.5.4+computecanada tqdm-4.67.3+computecanada traitlets-5.14.3+computecanada transformers-5.3.0+computecanada typer-0.24.1+computecanada typing-extensions-4.15.0+computecanada typing-inspection-0.4.2+computecanada tzdata-2025.3+computecanada uri-template-1.3.0+computecanada urllib3-2.6.3+computecanada wcwidth-0.6.0+computecanada webcolors-25.10.0+computecanada webencodings-0.5.1+computecanada websocket-client-1.9.0+computecanada xxhash-3.5.0+computecanada yarl-1.23.0+computecanada
+GPU: NVIDIA H100 80GB HBM3, 81559 MiB
+
+── Step 3: Labeling Features ─────────── 19:54:08
+`torch_dtype` is deprecated! Use `dtype` instead!
+Provider: huggingface | Model: Qwen/Qwen3-4B-Instruct-2507
+  Loading HuggingFace model: Qwen/Qwen3-4B-Instruct-2507 [bfloat16, device=auto]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<04:49,  1.37it/s]Loading weights:   1%|▏         | 5/398 [00:00<00:52,  7.49it/s]Loading weights:   3%|▎         | 13/398 [00:00<00:19, 20.19it/s]Loading weights:   5%|▌         | 20/398 [00:01<00:13, 27.57it/s]Loading weights:   6%|▋         | 25/398 [00:01<00:26, 14.17it/s]Loading weights:   8%|▊         | 31/398 [00:01<00:19, 19.25it/s]Loading weights:   9%|▉         | 37/398 [00:02<00:15, 23.96it/s]Loading weights:  12%|█▏        | 46/398 [00:02<00:10, 32.86it/s]Loading weights:  13%|█▎        | 53/398 [00:02<00:08, 38.53it/s]Loading weights:  15%|█▍        | 59/398 [00:02<00:08, 40.55it/s]Loading weights:  16%|█▋        | 65/398 [00:02<00:07, 44.21it/s]Loading weights:  18%|█▊        | 71/398 [00:02<00:07, 43.33it/s]Loading weights:  20%|██        | 80/398 [00:02<00:06, 52.87it/s]Loading weights:  22%|██▏       | 86/398 [00:02<00:05, 54.32it/s]Loading weights:  23%|██▎       | 92/398 [00:03<00:06, 50.61it/s]Loading weights:  25%|██▍       | 98/398 [00:03<00:05, 52.08it/s]Loading weights:  26%|██▌       | 104/398 [00:03<00:05, 49.21it/s]Loading weights:  28%|██▊       | 113/398 [00:03<00:04, 57.96it/s]Loading weights:  30%|███       | 120/398 [00:03<00:04, 55.71it/s]Loading weights:  32%|███▏      | 126/398 [00:03<00:05, 52.08it/s]Loading weights:  34%|███▍      | 135/398 [00:03<00:04, 59.31it/s]Loading weights:  36%|███▌      | 142/398 [00:03<00:04, 61.73it/s]Loading weights:  37%|███▋      | 149/398 [00:04<00:04, 56.01it/s]Loading weights:  39%|███▉      | 157/398 [00:04<00:03, 60.38it/s]Loading weights:  41%|████      | 164/398 [00:04<00:03, 62.43it/s]Loading weights:  43%|████▎     | 171/398 [00:04<00:09, 23.78it/s]Loading weights:  45%|████▌     | 180/398 [00:05<00:07, 30.75it/s]Loading weights:  47%|████▋     | 188/398 [00:05<00:05, 37.80it/s]Loading weights:  49%|████▉     | 195/398 [00:05<00:04, 40.78it/s]Loading weights:  51%|█████     | 201/398 [00:05<00:04, 43.81it/s]Loading weights:  52%|█████▏    | 207/398 [00:05<00:04, 44.56it/s]Loading weights:  54%|█████▎    | 213/398 [00:05<00:04, 46.17it/s]Loading weights:  56%|█████▌    | 221/398 [00:05<00:03, 53.66it/s]Loading weights:  57%|█████▋    | 228/398 [00:05<00:03, 55.04it/s]Loading weights:  59%|█████▉    | 235/398 [00:06<00:03, 50.08it/s]Loading weights:  61%|██████    | 243/398 [00:06<00:02, 56.94it/s]Loading weights:  63%|██████▎   | 250/398 [00:06<00:02, 53.75it/s]Loading weights:  64%|██████▍   | 256/398 [00:06<00:02, 51.86it/s]Loading weights:  66%|██████▌   | 262/398 [00:06<00:02, 50.59it/s]Loading weights:  67%|██████▋   | 268/398 [00:06<00:02, 49.37it/s]Loading weights:  69%|██████▉   | 276/398 [00:06<00:02, 56.38it/s]Loading weights:  71%|███████   | 282/398 [00:06<00:02, 55.13it/s]Loading weights:  72%|███████▏  | 288/398 [00:07<00:02, 54.85it/s]Loading weights:  74%|███████▍  | 295/398 [00:07<00:01, 54.84it/s]Loading weights:  76%|███████▌  | 301/398 [00:07<00:01, 50.67it/s]Loading weights:  77%|███████▋  | 307/398 [00:07<00:01, 52.71it/s]Loading weights:  79%|███████▊  | 313/398 [00:07<00:01, 46.04it/s]Loading weights:  81%|████████  | 322/398 [00:07<00:01, 54.49it/s]Loading weights:  82%|████████▏ | 328/398 [00:07<00:01, 46.77it/s]Loading weights:  85%|████████▌ | 339/398 [00:08<00:01, 57.82it/s]Loading weights:  87%|████████▋ | 346/398 [00:08<00:00, 52.40it/s]Loading weights:  89%|████████▉ | 355/398 [00:08<00:00, 58.84it/s]Loading weights:  91%|█████████ | 362/398 [00:08<00:00, 52.50it/s]Loading weights:  92%|█████████▏| 368/398 [00:08<00:00, 50.43it/s]Loading weights:  94%|█████████▍| 376/398 [00:08<00:00, 55.92it/s]Loading weights:  96%|█████████▌| 383/398 [00:08<00:00, 54.66it/s]Loading weights:  98%|█████████▊| 389/398 [00:09<00:00, 31.62it/s]Loading weights: 100%|█████████▉| 397/398 [00:09<00:00, 39.54it/s]Loading weights: 100%|██████████| 398/398 [00:09<00:00, 42.40it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  Model ready.
+
+Labeling layer 8 / n3...
+
+Labeling layer 8 / n5...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+
+Labeling layer 8 / n8...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+
+Labeling layer 8 / n10...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+
+Labeling layer 8 / n12...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+
+Labeling layer 8 / n15...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+
+Labeling layer 8 / n20...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+
+Labeling layer 8 / n25...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+
+Labeling layer 8 / n30...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+
+Labeling layer 8 / n50...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 30: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 31: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 32: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 33: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 35: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 37: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 38: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 39: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 40: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 41: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 42: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 44: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 45: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 46: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 48: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 49: 'Error' [other] (high)
+
+Labeling layer 14 / n3...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+
+Labeling layer 14 / n5...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+
+Labeling layer 14 / n8...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+
+Labeling layer 14 / n10...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+
+Labeling layer 14 / n12...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+
+Labeling layer 14 / n15...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+
+Labeling layer 14 / n20...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+
+Labeling layer 14 / n25...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+
+Labeling layer 14 / n30...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+
+Labeling layer 14 / n50...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 30: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 31: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 32: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 33: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 34: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 35: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 36: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 37: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 38: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 39: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 40: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 41: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 42: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 43: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 44: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 45: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 46: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 47: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 48: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 49: 'Error' [other] (high)
+
+Labeling layer 20 / n3...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+
+Labeling layer 20 / n5...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+
+Labeling layer 20 / n8...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+
+Labeling layer 20 / n10...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+
+Labeling layer 20 / n12...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+
+Labeling layer 20 / n15...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+
+Labeling layer 20 / n20...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+
+Labeling layer 20 / n25...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+
+Labeling layer 20 / n30...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+
+Labeling layer 20 / n50...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 30: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 31: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 32: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 33: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 34: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 35: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 36: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 37: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 38: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 39: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 40: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 41: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 42: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 43: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 44: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 45: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 46: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 47: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 48: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 49: 'Error' [other] (high)
+
+Labeling layer 28 / n3...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+
+Labeling layer 28 / n5...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+
+Labeling layer 28 / n8...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+
+Labeling layer 28 / n10...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+
+Labeling layer 28 / n12...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+
+Labeling layer 28 / n15...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+
+Labeling layer 28 / n20...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+
+Labeling layer 28 / n25...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+
+Labeling layer 28 / n30...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+
+Labeling layer 28 / n50...
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  0: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  1: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  2: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  3: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  4: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  5: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  6: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  7: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  8: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature  9: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 10: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 11: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 12: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 13: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 14: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 15: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 16: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 17: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 18: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 19: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 20: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 21: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 22: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 23: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 24: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 25: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 26: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 27: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 28: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 29: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 30: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 31: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 32: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 33: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 34: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 35: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 36: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 37: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 38: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 39: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 40: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 41: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 42: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 43: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 44: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 45: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 46: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 47: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 48: 'Error' [other] (high)
+    LLM labeling error: 
+    LLM labeling error: 
+    LLM labeling error: 
+  Feature 49: 'Error' [other] (high)
+
+Labeling complete!
+   ✓ Done 19:54:58
+── Step 4: Evaluating Taxonomy ───────── 19:54:58
+
+ Layer  nFeat   Consist  Complete  Independ  Composite
+------------------------------------------------------------
+     8      3     0.000     0.000     0.000      0.000
+     8      5     0.162     0.162     0.000      0.108
+     8      8     0.425     0.452     0.000      0.292
+     8     10     0.549     1.000     0.000      0.516
+     8     12     0.676     1.000     0.000      0.559
+     8     15     0.205     1.000     0.000      0.402
+     8     20     0.889     1.000     0.000      0.630
+     8     25     0.305     1.000     0.000      0.435
+     8     30     0.004     1.000     0.000      0.335
+     8     50     0.004     1.000     0.000      0.335
+    14      3     0.058     0.058     0.000      0.039
+    14      5     0.355     0.355     0.000      0.237
+    14      8     0.656     0.891     0.000      0.516
+    14     10     0.353     0.999     0.000      0.451
+    14     12     0.479     0.998     0.000      0.492
+    14     15     0.205     1.000     0.000      0.402
+    14     20     0.135     1.000     0.000      0.378
+    14     25     0.247     1.000     0.000      0.416
+    14     30     0.154     1.000     0.000      0.385
+    14     50     0.126     1.000     0.000      0.375
+    20      3     0.768     0.768     0.000      0.512
+    20      5     0.363     0.380     0.000      0.248
+    20      8     0.633     0.958     0.000      0.531
+    20     10     0.481     0.996     0.000      0.492
+    20     12     0.401     0.997     0.000      0.466
+    20     15     0.380     0.994     0.000      0.458
+    20     20     0.194     1.000     0.000      0.398
+    20     25     0.099     1.000     0.000      0.366
+    20     30     0.150     1.000     0.000      0.383
+    20     50     0.073     1.000     0.000      0.358
+    28      3     0.282     0.282     0.000      0.188
+    28      5     0.662     0.870     0.000      0.511
+    28      8     0.557     0.854     0.000      0.470
+    28     10     0.200     0.999     0.000      0.400
+    28     12     0.420     0.997     0.000      0.472
+    28     15     0.339     1.000     0.000      0.446
+    28     20     0.172     1.000     0.000      0.391
+    28     25     0.127     1.000     0.000      0.376
+    28     30     0.118     1.000     0.000      0.373
+    28     50     0.122     1.000     0.000      0.374
+
+Saved: outputs/plots/evaluation_metrics.png
+
+── Best Taxonomy Configuration ───────────────────────────────
+Layer 8 | n_features=20
+  Consistency:  0.889
+  Completeness: 1.000
+  Independence: 0.000
+  Composite:    0.630
+   ✓ Done 19:55:03
+── Step 5: Analyzing Trigger Alignment ── 19:55:03
+Taxonomy: 15 leaf trigger types
+L1: ['Model Portrait', 'Opinion Conformity', 'User Portrait']
+L2: ['Framing', 'Identity', 'Reward']
+L3: ['Uncertainty', 'Authority', 'Positive Incentive', 'Negative Incentive', 'Prior Agreement', 'Limitation', 'Experience', 'Emotional/ Affective', 'High Stakes', 'Certainty', 'Self-Validation', 'Expert Belief', 'Popular Consensus', 'Established Fact', 'Future Consensus']
+
+ Layer  nFeat   Cov-L3   Cov-L2   Cov-L1   Prec   Select
+------------------------------------------------------------
+     8      3     0.00     0.00     0.00   0.00    0.000
+     8      5     0.00     0.00     0.00   0.00    0.173
+     8      8     0.00     0.00     0.00   0.00    0.372
+     8     10     0.00     0.00     0.00   0.00    0.171
+     8     12     0.00     0.00     0.00   0.00    0.368
+     8     15     0.00     0.00     0.00   0.00    0.202
+     8     20     0.00     0.00     0.00   0.00    0.253
+     8     25     0.00     0.00     0.00   0.00    0.248
+     8     30     0.00     0.00     0.00   0.00    0.205
+     8     50     0.00     0.00     0.00   0.00    0.214
+    14      3     0.00     0.00     0.00   0.00    0.101
+    14      5     0.00     0.00     0.00   0.00    0.093
+    14      8     0.00     0.00     0.00   0.00    0.281
+    14     10     0.00     0.00     0.00   0.00    0.112
+    14     12     0.00     0.00     0.00   0.00    0.233
+    14     15     0.00     0.00     0.00   0.00    0.374
+    14     20     0.00     0.00     0.00   0.00    0.333
+    14     25     0.00     0.00     0.00   0.00    0.387
+    14     30     0.00     0.00     0.00   0.00    0.335
+    14     50     0.00     0.00     0.00   0.00    0.381
+    20      3     0.00     0.00     0.00   0.00    0.074
+    20      5     0.00     0.00     0.00   0.00    0.192
+    20      8     0.00     0.00     0.00   0.00    0.213
+    20     10     0.00     0.00     0.00   0.00    0.363
+    20     12     0.00     0.00     0.00   0.00    0.308
+    20     15     0.00     0.00     0.00   0.00    0.304
+    20     20     0.00     0.00     0.00   0.00    0.285
+    20     25     0.00     0.00     0.00   0.00    0.296
+    20     30     0.00     0.00     0.00   0.00    0.343
+    20     50     0.00     0.00     0.00   0.00    0.398
+    28      3     0.00     0.00     0.00   0.00    0.579
+    28      5     0.00     0.00     0.00   0.00    0.131
+    28      8     0.00     0.00     0.00   0.00    0.312
+    28     10     0.00     0.00     0.00   0.00    0.240
+    28     12     0.00     0.00     0.00   0.00    0.158
+    28     15     0.00     0.00     0.00   0.00    0.177
+    28     20     0.00     0.00     0.00   0.00    0.168
+    28     25     0.00     0.00     0.00   0.00    0.188
+    28     30     0.00     0.00     0.00   0.00    0.208
+    28     50     0.00     0.00     0.00   0.00    0.238
+Saved: outputs/plots/taxonomy_alignment_curves.png
+Saved: outputs/plots/activation_profiles.png
+
+── Best Configuration ────────────────────────────────────────────
+Layer 28 | n_features=3
+  L3 trigger coverage: 0%  (0/15 trigger types)
+  L2 coverage:         0%
+  L1 coverage:         0%
+  Feature precision:   0%
+  Trigger selectivity: 0.579
+   ✓ Done 19:55:09
+
+══════════════════════════════════════════════════════
+  Pipeline complete: Mon Mar  9 19:55:09 PDT 2026
+  Results: /home/terrence/sycophancy/sycophancy-sae/outputs/
+══════════════════════════════════════════════════════

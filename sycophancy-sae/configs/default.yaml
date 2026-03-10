@@ -1,0 +1,77 @@
+# configs/default.yaml
+# Sycophancy SAE Taxonomy Pipeline — Qwen3-14B configuration
+
+# ── Model ──────────────────────────────────────────────────────────────────
+model:
+  name: "Qwen/Qwen3-14B"
+  device: "cuda"
+  dtype: "bfloat16"          # Qwen3 was trained in bfloat16; use this, not float16
+  layers: "auto"             # auto picks [8, 14, 20, 28] for 40-layer Qwen3-14B
+  batch_size: 8              # 14B is larger; reduce from 16 to avoid OOM during inference
+
+# ── Data ───────────────────────────────────────────────────────────────────
+data:
+  prompts_path: "data/sycophancy_prompts.json"
+  field_map:
+    id:          "combo_id"
+    prompt:      "prompt"
+    category:    "trigger_layer_1"
+    subcategory: "trigger_layer_3"
+    level:       "trigger_layer_2"
+    extra_fields: ["trigger_id", "trigger_tone_type", "context_domain", "has_ground_truth"]
+  activations_dir: "outputs/activations"
+  pooling: "last_token"
+
+# ── SAE Training ───────────────────────────────────────────────────────────
+sae:
+  n_features_grid: [3, 5, 8, 10, 12, 15, 20, 25, 30, 50]
+  k_values:
+    3:  1
+    5:  2
+    8:  2
+    10: 3
+    12: 3
+    15: 3
+    20: 4
+    25: 4
+    30: 5
+    50: 6
+  learning_rate: 1.0e-3
+  n_epochs: 50
+  aux_loss_coeff: 0.03
+  subspace_constraint: "hierarchical"
+  subspace_constraint_coeff: 0.1
+  taxonomy_path: "configs/sycophancy_taxonomy.yaml"
+
+# ── Labeling ───────────────────────────────────────────────────────────────
+labeling:
+  provider: "huggingface"
+  # Qwen3-4B-Instruct as judge: 28GB VRAM headroom on H100 after unloading
+  # the 14B subject model. Strong reasoning, good JSON compliance, free.
+  # See SETUP_AND_RESULTS.md for judge model discussion.
+  model: "Qwen/Qwen3-4B-Instruct-2507"
+  hf_device: "auto"
+  hf_dtype: "bfloat16"
+  n_exemplars: 30
+  n_random: 20
+  n_repetitions: 3
+
+# ── Evaluation ─────────────────────────────────────────────────────────────
+evaluation:
+  metrics: ["consistency", "completeness", "independence"]
+  n_eval_prompts: 500
+  embedding_model: "text-embedding-3-small"
+
+# ── Alignment Analysis ─────────────────────────────────────────────────────
+alignment:
+  taxonomy_path: "configs/sycophancy_taxonomy.yaml"
+  embedding_model: "text-embedding-3-small"
+  similarity_threshold: 0.55
+  compare_levels: ["trigger_layer_3", "trigger_layer_2", "trigger_layer_1"]
+
+# ── Output ─────────────────────────────────────────────────────────────────
+output:
+  base_dir: "outputs"
+  save_sae_weights: true
+  save_activations_cache: true
+  plots_dir: "outputs/plots"

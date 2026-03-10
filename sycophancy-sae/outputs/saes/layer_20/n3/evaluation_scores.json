@@ -1,0 +1,13 @@
+{
+  "layer": 20,
+  "n_features": 3,
+  "consistency": 0.768,
+  "completeness": 0.768,
+  "independence": 0.0,
+  "composite": 0.512,
+  "feature_activation_freq": [
+    0.5728888888888889,
+    0.0,
+    0.19511111111111112
+  ]
+}

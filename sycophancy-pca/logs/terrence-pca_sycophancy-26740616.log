@@ -1,0 +1,322 @@
+created virtual environment CPython3.11.5.final.0-64 in 12230ms
+  creator CPython3Posix(dest=/localscratch/terrence.26740616.0/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/terrence/.local/share/virtualenv)
+    added seed packages: pip==25.2+computecanada, setuptools==80.9.0+computecanada, wheel==0.45.1+computecanada
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in /localscratch/terrence.26740616.0/env/lib/python3.11/site-packages (25.2+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pip-26.0.1+computecanada-py3-none-any.whl
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.2+computecanada
+    Uninstalling pip-25.2+computecanada:
+      Successfully uninstalled pip-25.2+computecanada
+Successfully installed pip-25.2+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Collecting huggingface_hub (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+  Using cached huggingface_hub-1.6.0-py3-none-any.whl.metadata (13 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/hf_xet-1.3.2+computecanada-cp37-abi3-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 2))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jaxtyping-0.3.9+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 3))
+Collecting langchain (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached langchain-1.2.10-py3-none-any.whl.metadata (5.7 kB)
+Collecting langchain-huggingface (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 5))
+  Using cached langchain_huggingface-1.2.1-py3-none-any.whl.metadata (3.3 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/matplotlib-3.10.8+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-2.4.2+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 7))
+Collecting plotly (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 8))
+  Downloading plotly-6.6.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting python-dotenv (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 9))
+  Using cached python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/safetensors-0.7.0+computecanada-cp38-abi3-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 10))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scikit_learn-1.8.0+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 11))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.10.0+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 12))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tqdm-4.67.3+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 13))
+Collecting transformer-lens (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached transformer_lens-2.17.0-py3-none-any.whl.metadata (12 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers-5.3.0+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+Collecting filelock>=3.10.0 (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+  Using cached filelock-3.25.1-py3-none-any.whl.metadata (2.0 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2026.2.0+computecanada-py3-none-any.whl (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/httpx-0.28.1+computecanada-py3-none-any.whl (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/packaging-26.0+computecanada-py3-none-any.whl (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyyaml-6.0.3+computecanada-cp311-cp311-linux_x86_64.whl (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typer-0.24.1+computecanada-py3-none-any.whl (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.15.0+computecanada-py3-none-any.whl (from huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/anyio-4.12.1+computecanada-py3-none-any.whl (from httpx<1,>=0.23.0->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Collecting certifi (from httpx<1,>=0.23.0->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+  Using cached certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/httpcore-1.0.9+computecanada-py3-none-any.whl (from httpx<1,>=0.23.0->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/idna-3.11+computecanada-py3-none-any.whl (from httpx<1,>=0.23.0->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/h11-0.16.0+computecanada-py3-none-any.whl (from httpcore==1.*->httpx<1,>=0.23.0->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/wadler_lindig-0.1.7+computecanada-py3-none-any.whl (from jaxtyping->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 3))
+Collecting langchain-core<2.0.0,>=1.2.10 (from langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached langchain_core-1.2.18-py3-none-any.whl.metadata (4.4 kB)
+Collecting langgraph<1.1.0,>=1.0.8 (from langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached langgraph-1.0.10-py3-none-any.whl.metadata (7.4 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pydantic-2.12.5+computecanada-py3-none-any.whl (from langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jsonpatch-1.33+computecanada-py2.py3-none-any.whl (from langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Collecting langsmith<1.0.0,>=0.3.45 (from langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached langsmith-0.7.16-py3-none-any.whl.metadata (15 kB)
+Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/uuid_utils-0.13.0+computecanada-cp39-abi3-linux_x86_64.whl (from langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jsonpointer-3.0.0+computecanada-py2.py3-none-any.whl (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Collecting langgraph-checkpoint<5.0.0,>=2.1.0 (from langgraph<1.1.0,>=1.0.8->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached langgraph_checkpoint-4.0.1-py3-none-any.whl.metadata (4.9 kB)
+Collecting langgraph-prebuilt<1.1.0,>=1.0.8 (from langgraph<1.1.0,>=1.0.8->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached langgraph_prebuilt-1.0.8-py3-none-any.whl.metadata (5.2 kB)
+Collecting langgraph-sdk<0.4.0,>=0.3.0 (from langgraph<1.1.0,>=1.0.8->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Downloading langgraph_sdk-0.3.10-py3-none-any.whl.metadata (1.6 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/xxhash-3.5.0+computecanada-cp311-cp311-linux_x86_64.whl (from langgraph<1.1.0,>=1.0.8->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/ormsgpack-1.12.1+computecanada-cp311-cp311-linux_x86_64.whl (from langgraph-checkpoint<5.0.0,>=2.1.0->langgraph<1.1.0,>=1.0.8->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/orjson-3.11.7+computecanada-cp311-cp311-linux_x86_64.whl (from langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.1.0,>=1.0.8->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests_toolbelt-1.0.0+computecanada-py2.py3-none-any.whl (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests-2.32.5+computecanada-py3-none-any.whl (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/zstandard-0.25.0+computecanada-cp311-cp311-linux_x86_64.whl (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/annotated_types-0.7.0+computecanada-py3-none-any.whl (from pydantic<3.0.0,>=2.7.4->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pydantic_core-2.41.5+computecanada-cp311-cp311-linux_x86_64.whl (from pydantic<3.0.0,>=2.7.4->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_inspection-0.4.2+computecanada-py3-none-any.whl (from pydantic<3.0.0,>=2.7.4->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/tokenizers-0.22.2+computecanada-cp39-abi3-linux_x86_64.whl (from langchain-huggingface->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 5))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/contourpy-1.3.3+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cycler-0.12.1+computecanada-py3-none-any.whl (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Collecting fonttools>=4.22.0 (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+  Using cached fonttools-4.62.0-py3-none-any.whl.metadata (117 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/kiwisolver-1.4.9+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pillow-12.1.0+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyparsing-3.3.2+computecanada-py3-none-any.whl (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.9.0.post0+computecanada-py2.py3-none-any.whl (from matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Collecting narwhals>=1.15.1 (from plotly->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 8))
+  Downloading narwhals-2.17.0-py3-none-any.whl.metadata (14 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scipy-1.17.0+computecanada-cp311-cp311-linux_x86_64.whl (from scikit-learn->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 11))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/joblib-1.5.3+computecanada-py3-none-any.whl (from scikit-learn->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 11))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/threadpoolctl-3.6.0+computecanada-py3-none-any.whl (from scikit-learn->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 11))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.14.0+computecanada-py3-none-any.whl (from torch->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 12))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.6.1+computecanada-py3-none-any.whl (from torch->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 12))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.6+computecanada-py3-none-any.whl (from torch->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 12))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/accelerate-1.13.0+computecanada-py3-none-any.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Collecting beartype<0.15.0,>=0.14.1 (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached beartype-0.14.1-py3-none-any.whl.metadata (28 kB)
+Collecting better-abc<0.0.4,>=0.0.3 (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached better_abc-0.0.3-py3-none-any.whl.metadata (1.4 kB)
+Collecting datasets>=2.7.1 (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached datasets-4.7.0-py3-none-any.whl.metadata (19 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/einops-0.8.2+computecanada-py3-none-any.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Collecting fancy-einsum>=0.0.3 (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached fancy_einsum-0.0.3-py3-none-any.whl.metadata (1.2 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/huggingface_hub-0.36.2+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-1.26.4+computecanada-cp311-cp311-linux_x86_64.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 7))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pandas-3.0.0+computecanada-cp311-cp311-linux_x86_64.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/protobuf-7.34.0+computecanada-cp311-cp311-linux_x86_64.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rich-14.3.3+computecanada-py3-none-any.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/sentencepiece-0.2.0+computecanada-cp311-cp311-linux_x86_64.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers_stream_generator-0.0.5+computecanada-py3-none-any.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Collecting typeguard<5.0,>=4.2 (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached typeguard-4.5.1-py3-none-any.whl.metadata (3.8 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/wandb-0.24.0+computecanada-py3-none-linux_x86_64.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+INFO: pip is looking at multiple versions of transformers to determine which version is compatible with other requirements. This could take a while.
+Collecting transformers (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+  Using cached transformers-5.3.0-py3-none-any.whl.metadata (32 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers-5.2.0+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+Collecting transformers (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+  Using cached transformers-5.2.0-py3-none-any.whl.metadata (32 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers-5.1.0+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+Collecting transformers (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+  Using cached transformers-5.1.0-py3-none-any.whl.metadata (31 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers-5.0.0+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+Collecting transformers (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+  Using cached transformers-5.0.0-py3-none-any.whl.metadata (37 kB)
+INFO: pip is still looking at multiple versions of transformers to determine which version is compatible with other requirements. This could take a while.
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/transformers-4.57.6+computecanada-py3-none-any.whl (from -r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/regex-2026.1.15+computecanada-cp311-cp311-linux_x86_64.whl (from transformers->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 15))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/psutil-7.2.2+computecanada-cp36-abi3-linux_x86_64.whl (from accelerate>=0.23.0->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Requirement already satisfied: pyarrow>=21.0.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcccore/arrow/23.0.1/lib/python3.11/site-packages (from datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14)) (23.0.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/dill-0.4.0+computecanada-py3-none-any.whl (from datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/multiprocess-0.70.18+computecanada-py3-none-any.whl (from datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/aiohttp-3.13.3+computecanada-cp311-cp311-linux_x86_64.whl (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiohappyeyeballs-2.6.1+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiosignal-1.4.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/attrs-25.4.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/frozenlist-1.8.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/multidict-6.7.1+computecanada-cp311-cp311-linux_x86_64.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/propcache-0.4.1+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/yarl-1.23.0+computecanada-cp311-cp311-linux_x86_64.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets>=2.7.1->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.17.0+computecanada-py2.py3-none-any.whl (from python-dateutil>=2.7->matplotlib->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 6))
+Collecting charset-normalizer<4,>=2 (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+  Using cached charset_normalizer-3.4.5-py3-none-any.whl.metadata (39 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-2.6.3+computecanada-py3-none-any.whl (from requests>=2.0.0->langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.2.10->langchain->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 4))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/markdown_it_py-4.0.0+computecanada-py3-none-any.whl (from rich>=12.6.0->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pygments-2.19.2+computecanada-py3-none-any.whl (from rich>=12.6.0->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mdurl-0.1.2+computecanada-py3-none-any.whl (from markdown-it-py>=2.2.0->rich>=12.6.0->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/mpmath-1.3.0+computecanada-py3-none-any.whl (from sympy>=1.13.3->torch->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 12))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/click-8.3.1+computecanada-py3-none-any.whl (from wandb>=0.13.5->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/gitpython-3.1.46+computecanada-py3-none-any.whl (from wandb>=0.13.5->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Collecting platformdirs (from wandb>=0.13.5->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached platformdirs-4.9.4-py3-none-any.whl.metadata (4.7 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/protobuf-6.33.5+computecanada-cp311-cp311-linux_x86_64.whl (from transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Collecting sentry-sdk>=2.0.0 (from wandb>=0.13.5->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached sentry_sdk-2.54.0-py2.py3-none-any.whl.metadata (10 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/gitdb-4.0.12+computecanada-py3-none-any.whl (from gitpython!=3.1.29,>=1.0.0->wandb>=0.13.5->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.29,>=1.0.0->wandb>=0.13.5->transformer-lens->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 14))
+  Using cached smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/markupsafe-3.0.3+computecanada-cp311-cp311-linux_x86_64.whl (from jinja2->torch->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 12))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/shellingham-1.5.4+computecanada-py2.py3-none-any.whl (from typer->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/annotated_doc-0.0.4+computecanada-py3-none-any.whl (from typer->huggingface_hub->-r /home/terrence/sycophancy/sycophancy-pca/requirements.txt (line 1))
+Using cached langchain-1.2.10-py3-none-any.whl (111 kB)
+Using cached langchain_core-1.2.18-py3-none-any.whl (503 kB)
+Using cached langgraph-1.0.10-py3-none-any.whl (160 kB)
+Using cached langgraph_checkpoint-4.0.1-py3-none-any.whl (50 kB)
+Using cached langgraph_prebuilt-1.0.8-py3-none-any.whl (35 kB)
+Downloading langgraph_sdk-0.3.10-py3-none-any.whl (94 kB)
+Using cached langsmith-0.7.16-py3-none-any.whl (347 kB)
+Using cached tenacity-9.1.4-py3-none-any.whl (28 kB)
+Using cached langchain_huggingface-1.2.1-py3-none-any.whl (30 kB)
+Downloading plotly-6.6.0-py3-none-any.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 318.9 kB/s  0:00:32
+Using cached python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+Using cached transformer_lens-2.17.0-py3-none-any.whl (195 kB)
+Using cached beartype-0.14.1-py3-none-any.whl (739 kB)
+Using cached better_abc-0.0.3-py3-none-any.whl (3.5 kB)
+Using cached typeguard-4.5.1-py3-none-any.whl (36 kB)
+Using cached datasets-4.7.0-py3-none-any.whl (527 kB)
+Using cached fancy_einsum-0.0.3-py3-none-any.whl (6.2 kB)
+Using cached fonttools-4.62.0-py3-none-any.whl (1.2 MB)
+Downloading narwhals-2.17.0-py3-none-any.whl (444 kB)
+Using cached charset_normalizer-3.4.5-py3-none-any.whl (55 kB)
+Using cached certifi-2026.2.25-py3-none-any.whl (153 kB)
+Using cached smmap-5.0.3-py3-none-any.whl (24 kB)
+Using cached sentry_sdk-2.54.0-py2.py3-none-any.whl (439 kB)
+Using cached filelock-3.25.1-py3-none-any.whl (26 kB)
+Using cached platformdirs-4.9.4-py3-none-any.whl (21 kB)
+Installing collected packages: sentencepiece, mpmath, better-abc, zstandard, xxhash, wadler-lindig, uuid-utils, urllib3, typing-extensions, tqdm, threadpoolctl, tenacity, sympy, smmap, six, safetensors, regex, pyyaml, python-dotenv, pyparsing, pygments, psutil, protobuf, propcache, platformdirs, pillow, packaging, ormsgpack, orjson, numpy, networkx, narwhals, multidict, mdurl, MarkupSafe, kiwisolver, jsonpointer, joblib, idna, hf_xet, h11, fsspec, frozenlist, fonttools, filelock, fancy-einsum, einops, dill, cycler, click, charset-normalizer, certifi, beartype, attrs, annotated-types, aiohappyeyeballs, yarl, typing-inspection, typeguard, sentry-sdk, scipy, requests, python-dateutil, pydantic-core, plotly, multiprocess, markdown-it-py, jsonpatch, jinja2, jaxtyping, httpcore, gitdb, contourpy, anyio, aiosignal, torch, scikit-learn, rich, requests-toolbelt, pydantic, pandas, matplotlib, huggingface_hub, httpx, gitpython, aiohttp, wandb, tokenizers, langsmith, langgraph-sdk, accelerate, transformers, langchain-core, datasets, transformers-stream-generator, langgraph-checkpoint, langchain-huggingface, transformer-lens, langgraph-prebuilt, langgraph, langchain
+
+Successfully installed MarkupSafe-3.0.3+computecanada accelerate-1.13.0+computecanada aiohappyeyeballs-2.6.1+computecanada aiohttp-3.13.3+computecanada aiosignal-1.4.0+computecanada annotated-types-0.7.0+computecanada anyio-4.12.1+computecanada attrs-25.4.0+computecanada beartype-0.14.1 better-abc-0.0.3 certifi-2026.2.25 charset-normalizer-3.4.5 click-8.3.1+computecanada contourpy-1.3.3+computecanada cycler-0.12.1+computecanada datasets-4.7.0 dill-0.4.0+computecanada einops-0.8.2+computecanada fancy-einsum-0.0.3 filelock-3.25.1 fonttools-4.62.0 frozenlist-1.8.0+computecanada fsspec-2026.2.0+computecanada gitdb-4.0.12+computecanada gitpython-3.1.46+computecanada h11-0.16.0+computecanada hf_xet-1.3.2+computecanada httpcore-1.0.9+computecanada httpx-0.28.1+computecanada huggingface_hub-0.36.2+computecanada idna-3.11+computecanada jaxtyping-0.3.9+computecanada jinja2-3.1.6+computecanada joblib-1.5.3+computecanada jsonpatch-1.33+computecanada jsonpointer-3.0.0+computecanada kiwisolver-1.4.9+computecanada langchain-1.2.10 langchain-core-1.2.18 langchain-huggingface-1.2.1 langgraph-1.0.10 langgraph-checkpoint-4.0.1 langgraph-prebuilt-1.0.8 langgraph-sdk-0.3.10 langsmith-0.7.16 markdown-it-py-4.0.0+computecanada matplotlib-3.10.8+computecanada mdurl-0.1.2+computecanada mpmath-1.3.0+computecanada multidict-6.7.1+computecanada multiprocess-0.70.18+computecanada narwhals-2.17.0 networkx-3.6.1+computecanada numpy-1.26.4+computecanada orjson-3.11.7+computecanada ormsgpack-1.12.1+computecanada packaging-26.0+computecanada pandas-3.0.0+computecanada pillow-12.1.0+computecanada platformdirs-4.9.4 plotly-6.6.0 propcache-0.4.1+computecanada protobuf-6.33.5+computecanada psutil-7.2.2+computecanada pydantic-2.12.5+computecanada pydantic-core-2.41.5+computecanada pygments-2.19.2+computecanada pyparsing-3.3.2+computecanada python-dateutil-2.9.0.post0+computecanada python-dotenv-1.2.2 pyyaml-6.0.3+computecanada regex-2026.1.15+computecanada requests-2.32.5+computecanada requests-toolbelt-1.0.0+computecanada rich-14.3.3+computecanada safetensors-0.7.0+computecanada scikit-learn-1.8.0+computecanada scipy-1.17.0+computecanada sentencepiece-0.2.0+computecanada sentry-sdk-2.54.0 six-1.17.0+computecanada smmap-5.0.3 sympy-1.14.0+computecanada tenacity-9.1.4 threadpoolctl-3.6.0+computecanada tokenizers-0.22.2+computecanada torch-2.10.0+computecanada tqdm-4.67.3+computecanada transformer-lens-2.17.0 transformers-4.57.6+computecanada transformers-stream-generator-0.0.5+computecanada typeguard-4.5.1 typing-extensions-4.15.0+computecanada typing-inspection-0.4.2+computecanada urllib3-2.6.3+computecanada uuid-utils-0.13.0+computecanada wadler-lindig-0.1.7+computecanada wandb-0.24.0+computecanada xxhash-3.5.0+computecanada yarl-1.23.0+computecanada zstandard-0.25.0+computecanada
+Running PCA for Qwen/Qwen3-14B across layers 0..39 on 1 GPU(s)
+GPU 0: layers 0-39
+Running: CUDA_VISIBLE_DEVICES=0 python pca.py --dataset-path data/sycophancy_prompts.json --prompt-field prompt --label-field trigger_layer_1 --model-name Qwen/Qwen3-14B --start-layer 0 --end-layer 39 --hook-point resid_post --batch-size 32 --n-components 3 --plot-3d --interactive --device cuda:0 --save-dir results/pca_interactive/gpu_0 --no-show --title Sycophancy Prompt Activations PCA
+WARNING:root:Loading model Qwen/Qwen3-14B requires setting trust_remote_code=True
+WARNING:root:Loading model Qwen/Qwen3-14B state dict requires setting trust_remote_code=True
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:18<02:06, 18.13s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:26<01:14, 12.47s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:38<01:01, 12.28s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:53<00:53, 13.31s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [01:12<00:45, 15.17s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [01:31<00:33, 16.56s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [03:07<00:42, 42.57s/it]Loading checkpoint shards: 100%|██████████| 8/8 [03:47<00:00, 41.71s/it]Loading checkpoint shards: 100%|██████████| 8/8 [03:47<00:00, 28.41s/it]
+WARNING:root:You are not using LayerNorm, so the writing weights can't be centered! Skipping
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+/home/terrence/sycophancy/sycophancy-pca/pca.py:58: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap("tab10", len(unique_labels))
+Loaded pretrained model Qwen/Qwen3-14B into HookedTransformer
+Saved results/pca_interactive/gpu_0/pca_layer_0.png
+Saved results/pca_interactive/gpu_0/pca_layer_0_interactive.html
+  Explained variance: PC1=79.7% PC2=2.7% PC3=1.7%
+Saved results/pca_interactive/gpu_0/pca_layer_1.png
+Saved results/pca_interactive/gpu_0/pca_layer_1_interactive.html
+  Explained variance: PC1=61.6% PC2=7.2% PC3=3.2%
+Saved results/pca_interactive/gpu_0/pca_layer_2.png
+Saved results/pca_interactive/gpu_0/pca_layer_2_interactive.html
+  Explained variance: PC1=43.8% PC2=11.6% PC3=4.3%
+Saved results/pca_interactive/gpu_0/pca_layer_3.png
+Saved results/pca_interactive/gpu_0/pca_layer_3_interactive.html
+  Explained variance: PC1=33.9% PC2=10.2% PC3=4.6%
+Saved results/pca_interactive/gpu_0/pca_layer_4.png
+Saved results/pca_interactive/gpu_0/pca_layer_4_interactive.html
+  Explained variance: PC1=28.3% PC2=9.1% PC3=5.2%
+Saved results/pca_interactive/gpu_0/pca_layer_5.png
+Saved results/pca_interactive/gpu_0/pca_layer_5_interactive.html
+  Explained variance: PC1=29.2% PC2=8.2% PC3=5.9%
+Saved results/pca_interactive/gpu_0/pca_layer_6.png
+Saved results/pca_interactive/gpu_0/pca_layer_6_interactive.html
+  Explained variance: PC1=25.9% PC2=9.3% PC3=5.8%
+Saved results/pca_interactive/gpu_0/pca_layer_7.png
+Saved results/pca_interactive/gpu_0/pca_layer_7_interactive.html
+  Explained variance: PC1=24.5% PC2=10.1% PC3=5.8%
+Saved results/pca_interactive/gpu_0/pca_layer_8.png
+Saved results/pca_interactive/gpu_0/pca_layer_8_interactive.html
+  Explained variance: PC1=19.6% PC2=9.9% PC3=6.3%
+Saved results/pca_interactive/gpu_0/pca_layer_9.png
+Saved results/pca_interactive/gpu_0/pca_layer_9_interactive.html
+  Explained variance: PC1=20.6% PC2=11.4% PC3=7.0%
+Saved results/pca_interactive/gpu_0/pca_layer_10.png
+Saved results/pca_interactive/gpu_0/pca_layer_10_interactive.html
+  Explained variance: PC1=16.8% PC2=10.6% PC3=6.7%
+Saved results/pca_interactive/gpu_0/pca_layer_11.png
+Saved results/pca_interactive/gpu_0/pca_layer_11_interactive.html
+  Explained variance: PC1=11.9% PC2=9.1% PC3=6.7%
+Saved results/pca_interactive/gpu_0/pca_layer_12.png
+Saved results/pca_interactive/gpu_0/pca_layer_12_interactive.html
+  Explained variance: PC1=10.6% PC2=8.3% PC3=5.9%
+Saved results/pca_interactive/gpu_0/pca_layer_13.png
+Saved results/pca_interactive/gpu_0/pca_layer_13_interactive.html
+  Explained variance: PC1=10.2% PC2=8.3% PC3=5.7%
+Saved results/pca_interactive/gpu_0/pca_layer_14.png
+Saved results/pca_interactive/gpu_0/pca_layer_14_interactive.html
+  Explained variance: PC1=10.3% PC2=8.5% PC3=5.9%
+Saved results/pca_interactive/gpu_0/pca_layer_15.png
+Saved results/pca_interactive/gpu_0/pca_layer_15_interactive.html
+  Explained variance: PC1=10.4% PC2=8.4% PC3=5.7%
+Traceback (most recent call last):
+  File "/home/terrence/sycophancy/sycophancy-pca/pca.py", line 357, in <module>
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 2186, in print_figure
+    result = print_method(
+             ^^^^^^^^^^^^^
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 2042, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ^^^^^
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/matplotlib/image.py", line 1657, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/PIL/Image.py", line 2585, in save
+    fp = builtins.open(filename, "w+b")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error: 'results/pca_interactive/gpu_0/pca_layer_16.png'
+Exception ignored in atexit callback: <function dump_compile_times at 0x147881a068e0>
+Traceback (most recent call last):
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/torch/_dynamo/utils.py", line 860, in dump_compile_times
+    log.info(compile_times(repr="str", aggregate=True))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/torch/_dynamo/utils.py", line 846, in compile_times
+    out += tabulate(rows, headers=("Function", "Runtimes (s)"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/localscratch/terrence.26740616.0/env/lib/python3.11/site-packages/torch/_dynamo/utils.py", line 242, in tabulate
+    import tabulate
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1616, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1659, in _fill_cache
+BrokenPipeError: [Errno 108] Cannot send after transport endpoint shutdown: '/home/terrence/sycophancy/sycophancy-pca'
+One or more GPU workers failed.

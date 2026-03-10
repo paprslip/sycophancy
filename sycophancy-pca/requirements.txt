@@ -1,0 +1,15 @@
+huggingface_hub
+hf_xet
+jaxtyping
+langchain
+langchain-huggingface
+matplotlib
+numpy
+plotly
+python-dotenv
+safetensors
+scikit-learn
+torch
+tqdm
+transformer-lens
+transformers
