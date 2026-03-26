@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "context_csv": "data/context_taxonomy.csv",
+  "trigger_csv": "data/trigger_taxonomy.csv",
+  "output_dir": "results/qwen3_14b/",
+  "device": "cuda",
+  "torch_dtype": "auto",
+  "batch_size": 32,
+  "max_new_tokens": 512,
+  "tones": [
+    "weak",
+    "mid",
+    "strong"
+  ],
+  "n_folds": 5,
+  "limit": null,
+  "skip_plots": false
+}

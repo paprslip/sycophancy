@@ -1,0 +1,23 @@
+[
+  {
+    "feature_idx": 0,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 1,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 2,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "feature_idx": 0,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 1
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 2
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 3
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 4
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 5
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 6
+  },
+  {
+    "feature_idx": 7,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 8,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 9,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 10
+  },
+  {
+    "feature_idx": 11,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 12
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 13
+  },
+  {
+    "feature_idx": 14,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 15,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 16,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "feature_idx": 17,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 18
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 19
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 20
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 21
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 22
+  },
+  {
+    "feature_idx": 23,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 24
+  }
+]

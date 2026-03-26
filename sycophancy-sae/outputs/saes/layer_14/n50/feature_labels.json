@@ -1,0 +1,940 @@
+[
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 0
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 1
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 2
+  },
+  {
+    "feature_idx": 3,
+    "title": "Dead Feature",
+    "description": "This feature never activated on any prompt.",
+    "sycophancy_type": "other",
+    "confidence": "low"
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 4
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 5
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 6
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 7
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 8
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 9
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 10
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 11
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 12
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 13
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 14
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 15
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 16
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 17
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 18
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 19
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 20
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 21
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 22
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 23
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 24
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 25
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 26
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 27
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 28
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 29
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 30
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 31
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 32
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 33
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 34
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 35
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 36
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 37
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 38
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 39
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 40
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 41
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 42
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 43
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 44
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 45
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 46
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 47
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 48
+  },
+  {
+    "title": "Error",
+    "description": "",
+    "trigger_layer_1": "",
+    "trigger_layer_2": "",
+    "trigger_layer_3": "other",
+    "confidence": "high",
+    "all_titles": [
+      "Error",
+      "Error",
+      "Error"
+    ],
+    "all_trigger_layer_3": [
+      "other",
+      "other",
+      "other"
+    ],
+    "feature_idx": 49
+  }
+]
